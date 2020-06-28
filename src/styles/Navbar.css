@@ -1,0 +1,104 @@
+:root {
+  --primaryColor: #3f51b5;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75em 0;
+    background: var(--primaryColor);
+    z-index: 1;
+}
+.Navbar__container {
+    width: 90%;
+    margin: 0 auto;
+}
+.Navbar__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar__center h3 {
+  color: var(--mainWhite);
+  cursor: pointer;
+}
+.Navbar-hamburger {
+    padding: 0.625em;
+    cursor: pointer;
+}
+.Navbar-hamburger span {
+    display: block;
+    width: 1.5em;
+    height: 0.125em;
+    background-color: var(--mainWhite);
+    transition: all .3s;
+}
+.Navbar-hamburger span:first-child {
+    margin-bottom: 5px;
+}
+.Navbar__center .close span:first-child {
+    margin-bottom: -0.125em;
+    transform: rotate(45deg);
+}
+.Navbar__center .close span:last-child {
+    transform: rotate(-45deg);
+}
+.Navbar-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--mainTransition);
+    list-style-type: none;
+}
+
+.Navbar-links a {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding: 0.375em 0.5em;
+    color: var(--mainWhite);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: var(--mainSpacing);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+.Navbar-links a:hover {
+    background-color: #002984;
+  }
+.Navbar-show {
+    height: 106px;
+}
+
+@media screen and (min-width: 768px) {
+    .Navbar-hamburger {
+      display: none;
+    }
+    .Navbar__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .Navbar-links {
+      height: auto;
+      display: flex;
+      margin-left: 4em;
+    }
+    .Navbar-links a {
+      margin: 0 1em;
+      cursor: pointer;
+    }
+  }
