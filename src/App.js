@@ -1,15 +1,11 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Index from './pages/Index';
+import Home from './component/Home';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" render={() => <Index />} />
-      </Switch>
-    </Router>
+    <>
+      <Home />
+    </>
   );
 }
 
-export default App;

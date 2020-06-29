@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Button from './material-ui/Button';
-import Typography from './material-ui/Typography';
-import ProductHeroLayout from './HeroLayout';
+import Button from '../components/Button';
+import Typography from '../components/Typography';
+import ProductHeroLayout from './ProductHeroLayout';
 
-const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
 
 const styles = (theme) => ({
   background: {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(/static/themes/tara.jpg)`,
     backgroundColor: '#7fc7d9', // Average color of the background image.
     backgroundPosition: 'center',
   },
@@ -35,11 +33,20 @@ function ProductHero(props) {
   return (
     <ProductHeroLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
-      <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
+      <img
+        style={{ display: 'none' }}
+        src="/static/themes/tara.jpg"
+        alt="increase priority"
+      />
       <Typography color="inherit" align="center" variant="h2" marked="center">
         Upgrade your Sundays
       </Typography>
-      <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
+      <Typography
+        color="inherit"
+        align="center"
+        variant="h5"
+        className={classes.h5}
+      >
         Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
       </Typography>
       <Button

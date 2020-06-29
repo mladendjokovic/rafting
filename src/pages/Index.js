@@ -1,14 +1,10 @@
 import React from 'react';
-import AppBar from '../components/AppAppBar';
-import Hero from '../components/Hero';
+import Home from '../components/Home';
 
-function Index() {
-    return(
-        <React.Fragment>
-            <AppBar />
-            <Hero />
-        </React.Fragment>
-    )
+export default function Page() {
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
-
-export default Index;
