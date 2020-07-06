@@ -1,0 +1,86 @@
+.Hero {
+	height: 100vh;
+	min-height: 500px;
+	position: relative;
+	padding-top: 80px;
+}
+.Hero_top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+.Hero_top_content {
+	width: 90%;
+	max-width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Hero_top_content a {
+	text-decoration: none;
+	color: white;
+}
+.Hero_top_contact,
+.Hero_top_social-media {
+	display: flex;
+	padding: 15px;
+}
+.Hero_top_contact a,
+.Hero_top_social-media a,
+.Hero_top_social-media div {
+	margin: 0 10px;
+}
+.Hero > nav {
+	width: 100%;
+}
+nav.active {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(39, 39, 233, 0.575);
+}
+.Hero ul {
+	width: 90%;
+	max-width: 1110px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.Hero li a {
+	padding: 0 20px;
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.Hero_text {
+	height: calc(100vh - 144px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.Hero_text h1 {
+	font-size: 50px;
+}
+.Hero_text h3 {
+	font-size: 25px;
+	margin: 20px 0;
+}
+.Hero_text button {
+	padding: 8px 15px;
+	border: none;
+	background-color: white;
+	border-radius: 5px;
+	margin: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}

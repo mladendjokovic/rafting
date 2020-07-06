@@ -1,0 +1,19 @@
+.Service {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+}
+.Service img {
+	height: 50px;
+}
+.Service h2 {
+	text-transform: uppercase;
+	margin: 20px 0;
+	flex: 1;
+}
+.Service p {
+	text-align: left;
+	line-height: 130%;
+	flex: 1;
+}

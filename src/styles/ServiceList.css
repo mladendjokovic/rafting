@@ -1,0 +1,13 @@
+.ServiceList {
+	padding: 50px;
+	background-color: turquoise;
+}
+.ServiceList__container {
+	width: 90%;
+	max-width: 1110px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-rows: auto;
+	gap: 30px;
+}
